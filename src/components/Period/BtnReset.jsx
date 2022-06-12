@@ -27,7 +27,7 @@ export default function BtnReset({ btnHidden, onBtnClick }) {
 
   return (
     <button
-      className={`period__btn btn ${animate}${hidden ? ' _hidden' : ''}`}
+      className={`period__btn btn${hidden ? ' _hidden' : ''} ${animate}`}
       onClick={onBtnClick}
       ref={btnRef}
       >
