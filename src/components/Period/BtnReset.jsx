@@ -20,7 +20,7 @@ export default function BtnReset({ btnHidden, onBtnClick }) {
 	}, [animate]);
 
 	useEffect(() => {
-		if (!hidden) setAnimate('period__btn_show');
+		setTimeout(() => { if (!hidden) setAnimate('period__btn_show') }, 500);
 	}, [hidden]);
 
   return (
