@@ -22,7 +22,7 @@ export default function BtnReset({ btnHidden, onBtnClick }) {
 	useEffect(() => {
     // Без setTimeout нет эффекта плавного появления кнопки. 
     // (На локальной машине без setTimeout все ок.)
-		setTimeout(() => { if (!hidden) setAnimate('period__btn_show') }, 1);
+		setTimeout(() => { if (!hidden) setAnimate('period__btn_show') }, 10);
 	}, [hidden]);
 
   return (
