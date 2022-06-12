@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Arial', sans-serif;
 	line-height: 1;
 }
 
@@ -27,6 +27,7 @@ a {
 }
 
 button {
+	font-family: inherit;
 	font-size: inherit;
 
 	border: none;
@@ -36,6 +37,7 @@ button {
 
 input {
 	width: 100%;
+	font-family: inherit;
 	font-size: inherit;
 }
 /* ------------------------------------------------------------------------------------- */
