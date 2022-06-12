@@ -24,7 +24,6 @@ function App() {
 
 	return (
 		<div className='app _container'>
-      <div>Test</div>
 			{
 				loading
         ?
