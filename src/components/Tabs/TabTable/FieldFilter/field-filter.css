@@ -1,0 +1,40 @@
+/* field-filter.css */
+
+.field-filter {
+  position: relative;
+  z-index: 2;
+  
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+.field-filter__dropdown {
+  min-width: 400px;
+}
+
+.field-filter__dropdown .drop-down-list__item {
+  font-size: 16px;
+}
+
+.field-filter__inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.field-filter__inputs .field-filter__input {
+  max-width: 120px;
+  font-size: 16px;
+}
+
+@media (max-width: 460px) {
+  .field-filter__dropdown {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .field-filter__inputs .field-filter__input {
+    line-height: 26px;
+  }
+}

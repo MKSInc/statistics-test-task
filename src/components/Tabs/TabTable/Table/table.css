@@ -1,0 +1,79 @@
+/* table.css */
+
+.table {
+  font-size: 14px;
+}
+
+.table__header {
+  vertical-align: top;
+}
+
+.header-table__cell {
+  font-weight: 400;
+  background-color: var(--purplish-white);
+  cursor: pointer;
+  outline: none;
+}
+
+.header-table__cell:focus {
+  box-shadow: inset 0 0 1px 1px black;
+}
+
+.table__cell {
+  padding: 10px;
+}
+
+td {
+  white-space: nowrap;
+}
+
+.table, .table__cell {
+  border: 1px solid var(--pearl-light-gray);
+  border-collapse: collapse;
+}
+
+.table__body .table__row:nth-child(odd) {
+  background-color: var(--smoky-white-2);
+}
+
+.table__body .table__row:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+.table__sort {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+.table__sort::before,
+.table__sort::after {
+  position: absolute;
+  top: 1px; 
+} 
+
+.table__sort::before {
+  content: '\2193';
+  left: 0;
+}
+
+.table__sort::after {
+  content: '\2191';
+  right: 0;
+}
+
+.table__sort_sort-down::after {
+  content: '';
+}
+
+.table__sort_sort-up::before {
+  content: '';
+}
+
+.table__sort_sort-up::after {
+  left: 0;
+  right: auto;
+}

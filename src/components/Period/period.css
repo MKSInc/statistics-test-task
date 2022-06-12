@@ -1,0 +1,51 @@
+/* period.css */
+
+.period {
+	position: relative;
+	z-index: 10;
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	row-gap: 10px;
+}
+
+.period > * {
+	margin-right: 5px;
+}
+
+.period__inputs {
+	margin-right: 20px;
+	white-space: nowrap;
+}
+
+.date-input {
+	display: inline-block;
+	width: 110px;
+}
+
+.react-datepicker-wrapper input {
+	line-height: 28px;
+	text-align: center;
+}
+
+.react-datepicker {
+	box-shadow: 0 0px 3px 0 gray;
+}
+
+.period__btn {
+	padding: 0 8px;
+	height: 28px;
+	font-size: 16px;
+	background-color: var(--periwinkle-crayola);
+	opacity: 0;
+}
+
+.period__btn_show {
+	opacity: 1;
+}
+
+.period__btn_hide {
+	opacity: 0;
+}

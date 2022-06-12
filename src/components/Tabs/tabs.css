@@ -1,0 +1,41 @@
+/* tabs.css */
+
+.tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1px;
+}
+
+.tabs__btn {
+  margin-top: 1px;
+  padding: 8px 20px;
+
+  outline: 1px solid black;   /* Вместо border для схлопывания. */
+  background-color: var(--color-cornflower);
+
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+}
+
+.tabs__btn:focus {
+  position: relative;
+  box-shadow: inset 0 0 0 0 black, 0 0 2px 2px black;
+}
+
+.tabs__btn_active {
+	background-color: var(--color-lavender);
+}
+
+.tab {
+  padding: 20px 10px;
+  border: 1px solid black;
+  background-color: var(--color-lavender);
+}
+
+@media (max-width: 768px) {
+  /* На экранах уже 768px уберем отступы от краев экрана для табов, что бы высвободить немного места. */
+  .tabs {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}

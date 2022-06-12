@@ -1,0 +1,60 @@
+/* pagination.css */
+
+.pagination {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap-reverse;
+}
+
+.rows-count-pagination {
+  display: flex;
+  margin-right: 30px;
+}
+
+.rows-count-pagination__label {
+  white-space: nowrap;
+}
+
+.rows-count-pagination__input {
+  flex: 0 0 auto;
+  max-width: 50px;
+  text-align: center;
+}
+
+.rows-count-pagination__btn-ok {
+  flex: 0 0 35px;
+  margin-left: 1px;
+  padding: 5px;
+
+  font-size: 14px;
+  background-color: var(--periwinkle-crayola);
+}
+
+.control-pagination {
+  display: flex;
+}
+
+.control-pagination__btn {
+  margin-left: 1px;
+  padding: 5px 10px;
+
+  font-size: 16px;
+  background-color: var(--gray-green-tea);
+}
+
+.control-pagination__btn_cur-pos {
+  background-color: var(--periwinkle-crayola);
+}
+
+.control-pagination__btn-prev,
+.control-pagination__btn-next {
+  background-color: var(--light-gray);
+  font-weight: 700;
+}
+
+.control-pagination__input {
+  flex: 0 0 auto;
+  max-width: 60px;
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+/* btn-filters-reset.css */
+
+.btn-filters-reset {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid black;
+  background-color: var(--periwinkle-crayola);
+}
+
+@media (max-width: 460px) {
+  .btn-filters-reset {
+    padding: 5px 8px;
+  }
+}

@@ -1,0 +1,41 @@
+/* ui.css */
+
+.btn {
+  border: none;
+  outline: 1px solid black;
+
+  transition-duration: 200ms;
+}
+
+.btn:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 2px 1px black;
+}
+
+.btn:focus {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0px 2px 2px black;
+}
+
+/* Селектор по тегу для стороннего компонента DateInput */
+.input, input {
+  padding: 0 10px;
+  line-height: 30px;
+
+  font-size: 18px;
+  border: none;
+  outline: 1px solid black;
+
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+}
+
+.input:hover, input:hover {
+  box-shadow: inset 0 0 2px 0px black;
+}
+
+.input:focus, input:focus {
+  box-shadow: inset 0 0 2px 1px black;
+}

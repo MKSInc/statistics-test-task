@@ -1,0 +1,4 @@
+@import './common.css'; /* Общие стили */
+@import './colors.css';
+@import './ui.css';
+@import './app.css';

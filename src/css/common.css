@@ -1,0 +1,70 @@
+/* common.css */
+
+/* Обнуляющие стили -------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	font-size: inherit;
+
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+input {
+	width: 100%;
+	font-size: inherit;
+}
+/* ------------------------------------------------------------------------------------- */
+
+/* Технические классы ------------------------------------------------------------------ */
+
+._container {
+	max-width: 1400px;
+	min-width: 320px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+._hidden {
+	display: none;
+}
+
+/* Как правило, текст для скринридеров, который не нужно выводить. */
+._visually-hidden {
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ------------------------------------------------------------------------------------- */

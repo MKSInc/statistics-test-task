@@ -1,0 +1,72 @@
+/* tab-table.css */
+
+.tab-table__header {
+  margin-bottom: 15px;
+
+  /* Для выравнивания границ элементов с таблицей.
+     Так как решил использовать outline вместо border для схлопывания границ. */
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.header-tab-table__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.header-tab-table__column_1 {
+  flex: 0 1 250px;
+  min-width: 200px;
+}
+
+.country-filter {
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+
+.country-filter__btn {
+  margin-left: 1px;
+  flex: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-filter__btn img {
+  width: 20px;
+  max-width: 100%;
+}
+
+.header-tab-table__row-2 {
+  justify-content: flex-end;
+}
+
+.tab-table__table{
+  margin-bottom: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.tab-table__message {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tab-table__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1px;
+}
+
+@media (max-width: 480px) {
+  .header-tab-table__row-2 {
+    justify-content: flex-start;
+  }
+
+  .tab-table__footer {
+    justify-content: flex-start;
+  }
+}

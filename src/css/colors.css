@@ -1,0 +1,16 @@
+:root {
+	--color-cornflower: #6d9eeb;			/* active tab */
+	--color-lavender: #cfe2f3;				/* tab background */
+	
+	--periwinkle-crayola: #d0e0e3;		/* button reset filters */
+
+	--smoky-white-1: #f3f3f3;				/* input country search */
+	--smoky-light-blue: #c9daf8;			/* search icon background */
+
+	--purplish-white: #fce5cd;				/* table header */
+	--smoky-white-2: #efefef;				/* table odd row */
+	--light-gray: #d9d9d9;						/* table even row */
+	--pearl-light-gray: #9e9e9e;			/* table border */
+
+	--gray-green-tea: #d9ead3;				/* pagination 1, 2, 3, 4 */
+}

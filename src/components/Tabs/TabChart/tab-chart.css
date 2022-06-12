@@ -1,0 +1,26 @@
+/* tab-chart.css */
+
+.tab-chart__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.tab-chart__dropdown {
+  min-width: 400px;
+}
+
+@media (max-width: 460px) {
+  .tab-chart__header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .tab-chart__dropdown {
+    min-width: auto;
+  }
+}
