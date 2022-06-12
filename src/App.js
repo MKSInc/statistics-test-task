@@ -5,26 +5,27 @@ import Period from './components/Period';
 import Tabs from './components/Tabs';
 
 function App() {
-  const { setFullData } = useAppContext();
-  const { loading, request, error, cleanError } = useHttp();
+  // const { setFullData } = useAppContext();
+  // const { loading, request, error, cleanError } = useHttp();
 
-  const fetchData = useCallback(async () => {
-    const data = await request('https://opendata.ecdc.europa.eu/covid19/casedistribution/json/');
-    if (data) setFullData(data);
-  }, [request, setFullData]);
+  // const fetchData = useCallback(async () => {
+  //   const data = await request('https://opendata.ecdc.europa.eu/covid19/casedistribution/json/');
+  //   if (data) setFullData(data);
+  // }, [request, setFullData]);
 
-  useEffect(() => { fetchData() }, [fetchData]);
+  // useEffect(() => { fetchData() }, [fetchData]);
 
-  useEffect(() => {
-    if (error) {
-      // Здесь можно выдать сообщение об ошибке.
-      cleanError();
-    }
-  }, [error, cleanError]);
+  // useEffect(() => {
+  //   if (error) {
+  //     // Здесь можно выдать сообщение об ошибке.
+  //     cleanError();
+  //   }
+  // }, [error, cleanError]);
 
 	return (
 		<div className='app _container'>
-			{
+      <div>Test</div>
+			{/* {
 				loading
         ?
 				<div>Загрузка данных ...</div>
@@ -33,7 +34,7 @@ function App() {
           <Period />
           <Tabs />
         </>
-			}
+			} */}
 		</div>
 	);
 }
